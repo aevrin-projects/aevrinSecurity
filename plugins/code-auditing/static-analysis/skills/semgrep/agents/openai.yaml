@@ -1,0 +1,3 @@
+interface:
+  display_name: "Semgrep Analysis"
+  short_description: "Scan code for security issues with Semgrep"

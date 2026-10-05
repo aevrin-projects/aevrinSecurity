@@ -1,0 +1,3 @@
+interface:
+  display_name: "Codegraph Review Gate"
+  short_description: "Check code changes for structural security regressions"

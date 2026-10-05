@@ -1,0 +1,3 @@
+interface:
+  display_name: "Cargo Fuzz"
+  short_description: "Write and run fuzz targets for Rust crates"

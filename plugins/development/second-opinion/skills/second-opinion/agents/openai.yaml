@@ -1,0 +1,3 @@
+interface:
+  display_name: "Second Opinion"
+  short_description: "Get an independent review of code changes"

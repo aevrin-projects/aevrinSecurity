@@ -1,0 +1,3 @@
+interface:
+  display_name: "Graph Evolution"
+  short_description: "Compare code graphs for security-relevant structural changes"

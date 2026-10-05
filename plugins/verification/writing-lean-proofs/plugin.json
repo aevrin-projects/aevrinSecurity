@@ -1,0 +1,9 @@
+{
+  "name": "writing-lean-proofs",
+  "description": "Structured Lean 4 proof writing and library design following Mathlib conventions",
+  "author": {
+    "name": "Aevrin Security",
+    "email": "ujjwal@aevrin.net",
+    "url": "https://aevrin.net"
+  }
+}

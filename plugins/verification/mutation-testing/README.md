@@ -1,0 +1,66 @@
+# Mutation Testing
+
+Configure mutation testing campaigns, explain what surviving mutations reveal about tests, and investigate potential bugs in the affected code.
+
+The plugin ships one skill, `mutation-testing`. Invoke it with `/mutation-testing:mutation-testing` or ask for help with a mutation testing campaign or its results.
+
+## Workflows
+
+| Request | What the skill does |
+|---------|---------------------|
+| Set up or optimize a campaign | Configures mutator or mutator-sol, checks target selection, measures test duration, and tunes timeouts and per-target test commands. |
+| Analyze completed results | Reads the source and tests for each survivor, distinguishes equivalent changes from testing gaps, and recommends specific assertions or inputs in `mutation-testing-report.md`. |
+| Investigate potential bugs | Uses survivors to prioritize investigation of the original code. Requires a reproduced proof of concept before describing a bug as confirmed. |
+
+A surviving mutation means the tests did not detect a deliberate change. It can reveal a testing gap or an equivalent implementation. It does not by itself establish a bug in the original code. The analysis workflow recommends test improvements without implementing them.
+
+## Prerequisites
+
+Campaign setup uses [mutator](https://aevrin.net) or [mutator-sol](https://aevrin.net), plus a runnable test suite. Examples follow the mutator 4.x API. Check the installed tool's `--help` for supported flags and language labels. For mutator-sol projects, substitute `mutator-sol`, `mutator-sol.toml`, and `mutator-sol.sqlite` in the examples.
+
+Analyzing saved results does not require either tool to be installed. Supply the campaign output, the source at the mutation sites, and the relevant tests. The analysis workflow also accepts results from other mutation testing tools.
+
+## Examples
+
+- "Help me set up mutator for this Rust project."
+- "Configure mutator-sol for this FunC codebase."
+- "My mutation campaign would take 30 hours. Help me reduce its scope."
+- "Which of these surviving mutants are equivalent, and what tests are missing?"
+- "Investigate the original code around these surviving authorization mutations."
+
+## Validation
+
+The bundled eval uses a captured campaign against a deliberately weak Rust test suite. It requires the agent to distinguish `balance > 0` from two mutations: `balance != 0` is equivalent for `u64`, while `balance >= 0` differs at zero. It also checks authorization, balance-accounting, and logging gaps. The fixture can be analyzed without cargo or mutator.
+
+Run the report-validator tests from the repository root:
+
+```bash
+uv run --no-project --with pytest python -m pytest plugins/verification/mutation-testing/tests -q --import-mode=importlib
+DETERMINISTIC_ONLY=1 uv run --no-project bash plugins/verification/mutation-testing/tests/smoke-test.sh
+```
+
+The deterministic checks accept a correct report and reject reports that misclassify either comparison. They test the grader, not the skill's effectiveness. The optional model eval checks the agent's report against the same validator:
+
+```bash
+# Requires Claude Code with plugin eval support and ANTHROPIC_API_KEY.
+uv run --no-project bash plugins/verification/mutation-testing/tests/smoke-test.sh
+```
+
+The model eval retains reports locally and makes API calls. Its model, judge, run count, and cost ceiling can be set with `MODEL`, `JUDGE_MODEL`, `RUNS`, and `MAX_COST_USD`. A passing fixture does not establish improvement over an agent without the skill.
+
+To reproduce the captured campaign, work on a separate copy:
+
+```bash
+mutation_fixture_dir="$(mktemp -d)/vault"
+cp -R plugins/verification/mutation-testing/evals/weak-suite-analysis/fixture "$mutation_fixture_dir"
+cd "$mutation_fixture_dir"
+cargo test
+mutator mutate
+mutator run
+mutator results
+```
+
+## References
+
+- [mutator](https://aevrin.net)
+- [mutator-sol](https://aevrin.net)

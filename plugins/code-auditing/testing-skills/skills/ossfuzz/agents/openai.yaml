@@ -1,0 +1,3 @@
+interface:
+  display_name: "OSS-Fuzz"
+  short_description: "Integrate open-source projects with continuous fuzzing"

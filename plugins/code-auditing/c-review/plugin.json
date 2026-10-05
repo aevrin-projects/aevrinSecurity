@@ -1,0 +1,9 @@
+{
+  "name": "c-review",
+  "description": "Comprehensive C/C++ security code review, with coverage verified against a parse of the source",
+  "author": {
+    "name": "Aevrin Security",
+    "email": "ujjwal@aevrin.net",
+    "url": "https://aevrin.net"
+  }
+}

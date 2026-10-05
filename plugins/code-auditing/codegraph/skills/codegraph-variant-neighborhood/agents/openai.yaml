@@ -1,0 +1,3 @@
+interface:
+  display_name: "Codegraph Variant Neighborhood"
+  short_description: "Find graph neighbors that may share a vulnerability"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Code Diagrams"
+  short_description: "Generate architecture diagrams from Codegraph code graphs"

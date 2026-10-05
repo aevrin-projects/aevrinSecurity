@@ -1,0 +1,281 @@
+{
+  "name": "Aevrin",
+  "owner": {
+    "name": "Aevrin Security",
+    "email": "ujjwal@aevrin.net",
+    "url": "https://aevrin.net"
+  },
+  "description": "Agent-neutral security skills from Aevrin Security for AI-assisted security analysis and development.",
+  "skills": [
+    {
+      "name": "security-audit",
+      "category": "code-auditing",
+      "description": "Source-first security audit workflow: reconnaissance, coverage-led hunting, adversarial validation, structured findings, and reports.",
+      "path": "plugins/code-auditing/security-audit"
+    },
+    {
+      "name": "agentic-actions-auditor",
+      "category": "code-auditing",
+      "description": "Audits GitHub Actions workflows for security vulnerabilities in AI agent integrations (Claude Code Action, Gemini CLI, OpenAI Codex, GitHub AI Inference)",
+      "path": "plugins/code-auditing/agentic-actions-auditor"
+    },
+    {
+      "name": "code-understanding",
+      "category": "code-auditing",
+      "description": "Understand a codebase before looking for bugs in it. Reads it function by function, records what each one assumes and depends on, and saves the write-ups to files instead of filling up the conversation.",
+      "path": "plugins/code-auditing/code-understanding"
+    },
+    {
+      "name": "burpsuite-project-parser",
+      "category": "code-auditing",
+      "description": "Search and extract data from Burp Suite project files (.burp) for security analysis",
+      "path": "plugins/code-auditing/burpsuite-project-parser"
+    },
+    {
+      "name": "c-review",
+      "category": "code-auditing",
+      "description": "Comprehensive C/C++ security code review, with coverage verified against a parse of the source",
+      "path": "plugins/code-auditing/c-review"
+    },
+    {
+      "name": "differential-review",
+      "category": "code-auditing",
+      "description": "Security-focused differential review of code changes with git history analysis and blast radius estimation",
+      "path": "plugins/code-auditing/differential-review"
+    },
+    {
+      "name": "dimensional-analysis",
+      "category": "code-auditing",
+      "description": "Annotates codebases with dimensional analysis comments documenting units, dimensions, and decimal scaling. Use when someone asks to annotate units in a codebase, perform a dimensional analysis, or find vulnerabilities in a DeFi protocol. Prevents dimensional mismatches and catches formula bugs early.",
+      "path": "plugins/code-auditing/dimensional-analysis"
+    },
+    {
+      "name": "false-positive-check",
+      "category": "code-auditing",
+      "description": "Systematic false positive verification for security bug analysis with mandatory gate reviews",
+      "path": "plugins/code-auditing/false-positive-check"
+    },
+    {
+      "name": "insecure-defaults",
+      "category": "code-auditing",
+      "description": "Detects insecure default configurations including hardcoded credentials, fallback secrets, weak authentication defaults, and dangerous values in production",
+      "path": "plugins/code-auditing/insecure-defaults"
+    },
+    {
+      "name": "rust-review",
+      "category": "code-auditing",
+      "description": "Comprehensive Rust security code review with specialized bug-finding agents covering the safe/unsafe boundary, memory safety in unsafe blocks, concurrency, panic-induced DoS, recursion-induced stack overflow, FFI, and async runtime hazards",
+      "path": "plugins/code-auditing/rust-review"
+    },
+    {
+      "name": "semgrep-rule-creator",
+      "category": "code-auditing",
+      "description": "Create custom Semgrep rules for detecting bug patterns and security vulnerabilities",
+      "path": "plugins/code-auditing/semgrep-rule-creator"
+    },
+    {
+      "name": "semgrep-rule-variant-creator",
+      "category": "code-auditing",
+      "description": "Creates language variants of existing Semgrep rules with proper applicability analysis and test-driven validation",
+      "path": "plugins/code-auditing/semgrep-rule-variant-creator"
+    },
+    {
+      "name": "risky-apis",
+      "category": "code-auditing",
+      "description": "Identify error-prone APIs, dangerous configurations, and footgun designs that enable security mistakes",
+      "path": "plugins/code-auditing/risky-apis"
+    },
+    {
+      "name": "static-analysis",
+      "category": "code-auditing",
+      "description": "Static analysis toolkit with CodeQL, Semgrep, and SARIF parsing for security vulnerability detection",
+      "path": "plugins/code-auditing/static-analysis"
+    },
+    {
+      "name": "supply-chain-risk-auditor",
+      "category": "code-auditing",
+      "description": "Audit a project's npm, PyPI, and Go dependencies for supply-chain risk: version-matched advisories for direct dependencies and the full lockfile tree, abandoned upstreams, npm publisher concentration, and install scripts",
+      "path": "plugins/code-auditing/supply-chain-risk-auditor"
+    },
+    {
+      "name": "similar-bug-finder",
+      "category": "code-auditing",
+      "description": "Find similar vulnerabilities and bugs across codebases using pattern-based analysis",
+      "path": "plugins/code-auditing/similar-bug-finder"
+    },
+    {
+      "name": "report-triage",
+      "category": "code-auditing",
+      "description": "Principled framework for triaging vulnerability reports using 7 brocards (rules of thumb). Evaluates incoming CVEs, bug bounty submissions, and security findings against structured dismissal/acceptance criteria before escalating to deeper analysis.",
+      "path": "plugins/code-auditing/report-triage"
+    },
+    {
+      "name": "code-improver",
+      "category": "development",
+      "description": "Improves code targets - skills, plugins, or a branch's changes - through an autonomous review-and-fix workflow with a pluggable reviewer (any installed skill or agent), a cross-round findings ledger, oscillation escalation, and a mechanical scope guard.",
+      "path": "plugins/development/code-improver"
+    },
+    {
+      "name": "devcontainer-setup",
+      "category": "development",
+      "description": "Create pre-configured devcontainers with Claude Code and language-specific tooling",
+      "path": "plugins/development/devcontainer-setup"
+    },
+    {
+      "name": "gh-cli",
+      "category": "development",
+      "description": "Intercepts GitHub URL fetches (WebFetch and MCP fetch tools) and curl/wget commands, redirecting to the authenticated gh CLI.",
+      "path": "plugins/development/gh-cli"
+    },
+    {
+      "name": "git-cleanup",
+      "category": "development",
+      "description": "Safely analyzes and cleans up local git branches and worktrees by categorizing them as merged, squash-merged, superseded, or active work.",
+      "path": "plugins/development/git-cleanup"
+    },
+    {
+      "name": "github-triage",
+      "category": "development",
+      "description": "Triages a repository's open GitHub issues and pull requests via the gh CLI: optionally merges ready bot and maintainer-approved PRs and spawns review subagents for unreviewed ones, closes already-resolved issues with referenced explanations, cross-links issues with pending fix PRs, and assigns local-only priority and change-size estimates.",
+      "path": "plugins/development/github-triage"
+    },
+    {
+      "name": "goal-prompt",
+      "category": "development",
+      "description": "Drafts copy-ready /goal commands for goal mode in Claude Code and Codex: verifiable completion conditions with stop bounds, normalized to a single line under the 4,000-character cap.",
+      "path": "plugins/development/goal-prompt"
+    },
+    {
+      "name": "random-pick",
+      "category": "development",
+      "description": "Draws the 12 Houses of the Zodiac Tarot spread using cryptographic randomness to add 100+ bits of entropy to vague or underspecified planning. Interprets the spread to guide next steps. Use when feeling lucky, invoking heart-of-the-cards energy, or when prompts are ambiguous.",
+      "path": "plugins/development/random-pick"
+    },
+    {
+      "name": "modern-cpp",
+      "category": "development",
+      "description": "Modern C++ best practices (C++20/23/26). Use when writing C++ code, creating new C++ projects, or modernizing legacy C++ patterns.",
+      "path": "plugins/development/modern-cpp"
+    },
+    {
+      "name": "modern-python",
+      "category": "development",
+      "description": "Modern Python best practices. Use when creating new Python projects, and writing Python scripts, or migrating existing projects from legacy tools.",
+      "path": "plugins/development/modern-python"
+    },
+    {
+      "name": "open-sourcing",
+      "category": "development",
+      "description": "Prepares a repository for public open-source release: secrets-history hygiene, license selection, documentation and CI readiness checks, and language-specific packaging and release guidance.",
+      "path": "plugins/development/open-sourcing"
+    },
+    {
+      "name": "review-walkthrough",
+      "category": "development",
+      "description": "Generates an interactive HTML walkthrough for reviewing code changes. Use only when explicitly called.",
+      "path": "plugins/development/review-walkthrough"
+    },
+    {
+      "name": "second-opinion",
+      "category": "development",
+      "description": "Gets independent code reviews from Codex or Antigravity for uncommitted changes, branch diffs, and commits.",
+      "path": "plugins/development/second-opinion"
+    },
+    {
+      "name": "yara-authoring",
+      "category": "malware-analysis",
+      "description": "YARA-X detection rule authoring with linting and quality analysis",
+      "path": "plugins/malware-analysis/yara-authoring"
+    },
+    {
+      "name": "firebase-apk-scanner",
+      "category": "mobile-security",
+      "description": "Scan Android APKs for Firebase security misconfigurations including open databases, storage buckets, authentication issues, and exposed cloud functions. For authorized security research only.",
+      "path": "plugins/mobile-security/firebase-apk-scanner"
+    },
+    {
+      "name": "dwarf-debug-info",
+      "category": "reverse-engineering",
+      "description": "Analyze DWARF debug information: parse and search DIEs with dwarfdump and readelf, verify debug info integrity, and write DWARF parsing code",
+      "path": "plugins/reverse-engineering/dwarf-debug-info"
+    },
+    {
+      "name": "building-secure-contracts",
+      "category": "smart-contract-security",
+      "description": "Comprehensive smart contract security toolkit based on the Building Secure Contracts framework. Includes vulnerability scanners for 6 blockchains and 5 development guideline assistants.",
+      "path": "plugins/smart-contract-security/building-secure-contracts"
+    },
+    {
+      "name": "entry-point-analyzer",
+      "category": "smart-contract-security",
+      "description": "Analyzes smart contract codebases to identify state-changing entry points for security auditing. Detects externally callable functions that modify state, categorizes them by access level, and generates structured audit reports.",
+      "path": "plugins/smart-contract-security/entry-point-analyzer"
+    },
+    {
+      "name": "claude-in-chrome-troubleshooting",
+      "category": "tooling",
+      "description": "Diagnose and fix Claude in Chrome MCP extension connectivity issues",
+      "path": "plugins/tooling/claude-in-chrome-troubleshooting"
+    },
+    {
+      "name": "constant-time-analysis",
+      "category": "verification",
+      "description": "Detect compiler-induced timing side-channels in cryptographic code",
+      "path": "plugins/verification/constant-time-analysis"
+    },
+    {
+      "name": "post-patch-validation",
+      "category": "verification",
+      "description": "Validates security patches against the reported bug, root-cause variants, and surrounding behavior. Returns reproducible failures to repair and validation gaps, with pinned inputs and saved evidence. Bundles a validate-patch dynamic workflow for Claude Code.",
+      "path": "plugins/verification/post-patch-validation"
+    },
+    {
+      "name": "property-based-testing",
+      "category": "verification",
+      "description": "Write, review, and triage property-based tests - Hypothesis, fast-check, proptest, and Echidna or Medusa for Solidity invariants",
+      "path": "plugins/verification/property-based-testing"
+    },
+    {
+      "name": "spec-to-code-compliance",
+      "category": "verification",
+      "description": "Check code against the documentation that specifies it: one agent per requirement, divergences refuted before they are reported, evidence cited to the line",
+      "path": "plugins/verification/spec-to-code-compliance"
+    },
+    {
+      "name": "writing-lean-proofs",
+      "category": "verification",
+      "description": "Structured Lean 4 proof writing and library design following Mathlib conventions",
+      "path": "plugins/verification/writing-lean-proofs"
+    },
+    {
+      "name": "secret-wipe-audit",
+      "category": "verification",
+      "description": "Detects missing or compiler-optimized zeroization of sensitive data with assembly and control-flow analysis",
+      "path": "plugins/verification/secret-wipe-audit"
+    },
+    {
+      "name": "codegraph",
+      "category": "code-auditing",
+      "description": "Builds source and binary code graphs for security analysis, context slicing, mutation testing, cryptographic protocol modeling, finding triage, and variant analysis.",
+      "path": "plugins/code-auditing/codegraph"
+    },
+    {
+      "name": "testing-skills",
+      "category": "code-auditing",
+      "description": "Skills from the Aevrin Security Application Security Testing Guide (aevrin.net)",
+      "path": "plugins/code-auditing/testing-skills"
+    },
+    {
+      "name": "team-profile",
+      "category": "team-management",
+      "description": "Interprets Team Profile survey results for individuals and teams",
+      "path": "plugins/team-management/team-profile"
+    },
+    {
+      "name": "mutation-testing",
+      "category": "verification",
+      "description": "Configures mutator or mutator-sol campaigns, analyzes surviving mutants, and investigates bugs exposed by testing gaps. Use when setting up mutation testing, reviewing campaign results, identifying equivalent mutants, or finding bugs from surviving mutations.",
+      "path": "plugins/verification/mutation-testing"
+    }
+  ]
+}

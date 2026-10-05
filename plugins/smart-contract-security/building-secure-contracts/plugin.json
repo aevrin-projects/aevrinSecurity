@@ -1,0 +1,9 @@
+{
+  "name": "building-secure-contracts",
+  "description": "Comprehensive smart contract security toolkit based on the Building Secure Contracts framework. Includes vulnerability scanners for 6 blockchains and 5 development guideline assistants.",
+  "author": {
+    "name": "Aevrin Security",
+    "email": "ujjwal@aevrin.net",
+    "url": "https://aevrin.net"
+  }
+}

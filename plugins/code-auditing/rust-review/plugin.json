@@ -1,0 +1,9 @@
+{
+  "name": "rust-review",
+  "description": "Comprehensive Rust security code review with specialized bug-finding agents covering the safe/unsafe boundary, memory safety in unsafe blocks, concurrency, panic-induced DoS, recursion-induced stack overflow, FFI, and async runtime hazards",
+  "author": {
+    "name": "Aevrin Security",
+    "email": "ujjwal@aevrin.net",
+    "url": "https://aevrin.net"
+  }
+}

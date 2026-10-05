@@ -1,0 +1,7 @@
+{
+  "name": "plugin-dev",
+  "description": "Eval-only stand-in for the plugin-dev plugin: provides a skill-reviewer agent so cases exercising the skill-improver entry can run inside the isolated eval workspace, where the real marketplace plugin is not installed.",
+  "author": {
+    "name": "Fixture Author"
+  }
+}

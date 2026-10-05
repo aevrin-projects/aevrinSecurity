@@ -1,0 +1,3 @@
+interface:
+  display_name: "Codegraph Finding Triage"
+  short_description: "Assess a security finding with code graph evidence"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "LibAFL Fuzzing"
+  short_description: "Build custom fuzzers with LibAFL components"

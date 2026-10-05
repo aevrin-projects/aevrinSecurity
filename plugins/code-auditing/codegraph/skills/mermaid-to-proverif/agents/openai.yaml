@@ -1,0 +1,3 @@
+interface:
+  display_name: "Mermaid to ProVerif"
+  short_description: "Translate protocol diagrams into formal verification models"

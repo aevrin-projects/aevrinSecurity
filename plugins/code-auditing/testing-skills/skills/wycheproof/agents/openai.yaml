@@ -1,0 +1,3 @@
+interface:
+  display_name: "Wycheproof Testing"
+  short_description: "Test cryptographic implementations with known attack vectors"

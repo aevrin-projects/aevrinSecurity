@@ -1,0 +1,3 @@
+interface:
+  display_name: "Code Maturity Assessor"
+  short_description: "Assess smart contract code maturity with evidence"

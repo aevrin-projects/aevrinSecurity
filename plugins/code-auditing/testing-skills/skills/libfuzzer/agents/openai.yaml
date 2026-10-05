@@ -1,0 +1,3 @@
+interface:
+  display_name: "LibFuzzer"
+  short_description: "Set up coverage-guided fuzzing for C and C++ libraries"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Mutation Triage"
+  short_description: "Triage surviving mutants with code graph evidence"

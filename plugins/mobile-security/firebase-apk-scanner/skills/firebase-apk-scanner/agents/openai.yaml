@@ -1,0 +1,3 @@
+interface:
+  display_name: "Firebase APK Scanner"
+  short_description: "Find Firebase misconfigurations in Android APKs"

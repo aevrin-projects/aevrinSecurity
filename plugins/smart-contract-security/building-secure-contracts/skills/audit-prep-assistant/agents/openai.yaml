@@ -1,0 +1,3 @@
+interface:
+  display_name: "Audit Prep Assistant"
+  short_description: "Prepare a codebase for an external security audit"

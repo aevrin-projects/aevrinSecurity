@@ -1,0 +1,3 @@
+interface:
+  display_name: "Crypto Protocol Diagrams"
+  short_description: "Diagram cryptographic protocols and message flows"

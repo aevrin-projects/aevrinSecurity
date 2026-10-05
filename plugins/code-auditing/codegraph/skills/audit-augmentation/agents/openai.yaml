@@ -1,0 +1,3 @@
+interface:
+  display_name: "Audit Augmentation"
+  short_description: "Overlay external audit findings on Codegraph code graphs"

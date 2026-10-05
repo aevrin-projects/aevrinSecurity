@@ -1,0 +1,3 @@
+interface:
+  display_name: "Fuzzing Harnesses"
+  short_description: "Design effective fuzzing harnesses for C, C++, and Rust"

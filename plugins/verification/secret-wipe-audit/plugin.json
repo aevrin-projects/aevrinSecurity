@@ -1,0 +1,9 @@
+{
+  "name": "secret-wipe-audit",
+  "description": "Detects missing or compiler-optimized zeroization of sensitive data with assembly and control-flow analysis",
+  "author": {
+    "name": "Aevrin Security",
+    "email": "ujjwal@aevrin.net",
+    "url": "https://aevrin.net"
+  }
+}

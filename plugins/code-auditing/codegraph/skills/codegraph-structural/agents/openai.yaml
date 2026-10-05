@@ -1,0 +1,3 @@
+interface:
+  display_name: "Codegraph Structural Analysis"
+  short_description: "Analyze attack surface, taint paths, and code complexity"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Atheris Fuzzing"
+  short_description: "Fuzz Python code and native extensions with Atheris"

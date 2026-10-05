@@ -1,0 +1,3 @@
+interface:
+  display_name: "Vector Forge"
+  short_description: "Generate cryptographic test vectors from surviving mutants"

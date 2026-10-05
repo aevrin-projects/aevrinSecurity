@@ -1,0 +1,3 @@
+interface:
+  display_name: "Fuzzing Dictionaries"
+  short_description: "Build dictionaries that help fuzzers reach deeper code"

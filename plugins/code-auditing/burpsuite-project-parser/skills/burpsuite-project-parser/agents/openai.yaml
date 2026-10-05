@@ -1,0 +1,3 @@
+interface:
+  display_name: "Burp Suite Project Parser"
+  short_description: "Search and extract security evidence from Burp Suite projects"

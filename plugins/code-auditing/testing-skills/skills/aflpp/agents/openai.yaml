@@ -1,0 +1,3 @@
+interface:
+  display_name: "AFL++ Fuzzing"
+  short_description: "Run and tune AFL++ fuzzing campaigns"

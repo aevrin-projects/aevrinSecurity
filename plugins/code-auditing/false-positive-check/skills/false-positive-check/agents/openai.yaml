@@ -1,0 +1,3 @@
+interface:
+  display_name: "False Positive Check"
+  short_description: "Verify suspected vulnerabilities against code evidence"

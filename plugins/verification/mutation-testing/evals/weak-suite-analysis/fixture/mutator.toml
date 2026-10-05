@@ -1,0 +1,7 @@
+db = "mutator.sqlite"
+
+[targets]
+include = ["src/**/*.rs"]
+
+[test]
+cmd = "cargo test"

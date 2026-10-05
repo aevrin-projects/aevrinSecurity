@@ -1,0 +1,3 @@
+interface:
+  display_name: "Devcontainer Setup"
+  short_description: "Set up isolated development containers and tooling"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codegraph Context Slicer"
+  short_description: "Delegate bounded graph-informed code slices"
+  default_prompt: "Use $slicing-code-context to delegate a focused code task using a bounded Codegraph source packet."

@@ -1,0 +1,3 @@
+interface:
+  display_name: "AddressSanitizer"
+  short_description: "Detect memory errors while testing C and C++ code"

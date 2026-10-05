@@ -1,0 +1,3 @@
+interface:
+  display_name: "Fuzzing Obstacles"
+  short_description: "Remove validation barriers that block fuzzing progress"

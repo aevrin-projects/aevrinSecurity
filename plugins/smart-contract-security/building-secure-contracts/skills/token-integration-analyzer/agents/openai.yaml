@@ -1,0 +1,3 @@
+interface:
+  display_name: "Token Integration Analyzer"
+  short_description: "Review token implementations and integration risks"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "CodeQL Analysis"
+  short_description: "Analyze code for security vulnerabilities with CodeQL"

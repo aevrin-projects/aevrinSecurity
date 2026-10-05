@@ -1,0 +1,3 @@
+interface:
+  display_name: "Mutation Testing"
+  short_description: "Run mutation campaigns and investigate surviving mutants"
